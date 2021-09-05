@@ -1,6 +1,6 @@
 # Android Basics course with Kotlin (by Google)
 
-## Topics covered till date:
+## Topics covered
 * Basic Activity
 * Material theme basics
 * Best practices for clean UI
