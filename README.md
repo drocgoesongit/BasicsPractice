@@ -6,3 +6,7 @@ Practice Application for Basics in Kotlin.
 * Material theme basics
 * Best practices for clean UI
 * Classes inheritance 
+
+## Activity Details
+* Dice Roll 
+* Tip counter with minimal UI 
