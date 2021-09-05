@@ -1,7 +1,5 @@
-# Basics Practice Application (With Kotlin & Java)
-## Android Basics course with Kotlin (by Google)
+# Android Basics course with Kotlin (by Google)
 
-Practice Application for Basics in Kotlin.
 ## Topics covered till date:
 * Basic Activity
 * Material theme basics
