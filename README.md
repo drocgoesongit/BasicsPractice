@@ -5,3 +5,4 @@ Practice Application for Basics in Kotlin.
 * Basic Activity
 * Material theme basics
 * Best practices for clean UI
+* Classes inheritance 
