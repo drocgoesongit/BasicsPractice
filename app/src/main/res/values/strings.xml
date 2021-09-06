@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Happy Birthday</string>
+    <string name="happy_birthday_brother">Happy Birthday Brother</string>
+    <string name="from_nabeel">from Nabeel</string>
+    <string name="enter_tip_amount">Enter tip amount</string>
+    <string name="how_was_the_service">How was the service?</string>
+    <string name="ok_15">OK (15%)</string>
+    <string name="good_18">Good (18%)</string>
+    <string name="amazing_20">Amazing (20%)</string>
+    <string name="calculate_tip">Calculate Tip</string>
+    <string name="calculated_tip">Calculated tip</string>
+    <string name="result">Calculated Tip : %s</string>
+    <string name="entername">Entername</string>
+    <string name="enter_the_tip_amount">Enter the tip amount</string>
+    <string name="tip_calculator">Tip Calculator</string>
+</resources>
