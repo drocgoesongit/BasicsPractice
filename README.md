@@ -5,6 +5,10 @@
 * Material theme basics
 * Best practices for clean UI
 * Classes inheritance 
+* RecyclerView
+* Intents (Explicit & Implicit)
+* LifeCycle Of Activity & Saved Instances
+* 
 
 ## Activity Details
 * Dice Roll 
