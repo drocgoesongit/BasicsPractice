@@ -18,5 +18,4 @@
 * Words, Words Details (Words apps: RecyclerView, Adapters and Layout manager)
 * Dish App (Activity lifecycle, saved instance)
 
-
-
+## Navigation Basics (Jetpack, Architecture basics)
