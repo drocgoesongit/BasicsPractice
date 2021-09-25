@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
+import com.example.happybirthday.Adapters.MainRecyclerViewAdapter
 import java.sql.DriverManager.println
 
 class MainActivity : AppCompatActivity() {
@@ -15,21 +18,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        supportActionBar?.hide()
-        val TAG = "tag"
-        val happyText = findViewById<TextView>(R.id.happyBirthdayText)
-        val image = findViewById<ImageView>(R.id.image)
-        image.setOnClickListener(View.OnClickListener {
-            val numberRange = 1..6
-            val number = numberRange.random()
-            Log.i(TAG, number.toString())
-            intent = Intent(this, DiceClass::class.java)
-            startActivity(intent)
-        })
-        happyText.setOnClickListener{
-            intent = Intent(this,TipCounterActivity::class.java)
-            startActivity(intent)
-        }
+        title = "All Practiced Activities"
+
+        // Initialization Of Views.
+
+        val mainRecyclerView = findViewById<androidx.recyclerview.widget.RecyclerView>(R.id.recyclerViewMain)
+
+        mainRecyclerView.adapter = MainRecyclerViewAdapter()
+        mainRecyclerView.layoutManager = GridLayoutManager(this,2)
 
     }
 }

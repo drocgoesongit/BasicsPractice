@@ -20,14 +20,12 @@ class TipCounterActivity : AppCompatActivity() {
         binding = ActivityTipCounterBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.hide()
-
         binding.calculateButton.setOnClickListener {
             val tip = calculate()
             val formattedNumber = NumberFormat.getCurrencyInstance().format(tip)
             binding.result.text = getString(R.string.result, formattedNumber)
         }
         binding.tipAmoun.setOnKeyListener{view, keyCode, _ -> handelKeyEvent(view , keyCode)}
-
     }
 
     //Method to hide "keyboard"  on pressing "Enter" key. :D
@@ -41,12 +39,13 @@ class TipCounterActivity : AppCompatActivity() {
     }
 
     private fun calculate(): Double {
-        val amount: String? = binding.tipAmount.text.toString()
-        if (amount == null) {//TODO Error not getting handled.
-            Toast.makeText(this, "Enter valid amount.", Toast.LENGTH_SHORT).show()
+        val amount: String = binding.tipAmount.text.toString()
+        val amountDouble = amount.toDoubleOrNull() // Converting the string number to double.
+        //Handling nullability of the input. :D
+        if(amountDouble == null){
+            Toast.makeText(this, amount, Toast.LENGTH_SHORT).show()
             return 0.0
         }
-        val amountDouble: Double = amount.toDouble() // Converting the string number to double.
 
         val percentage = when (binding.radioGroup.checkedRadioButtonId) {
             R.id.amazingRadioButton -> 20

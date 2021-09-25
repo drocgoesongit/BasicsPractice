@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_switch_layout"
+        android:title="@string/action_switch_layout"
+        android:icon="@drawable/ic_calendar_view_month_black_24dp"
+        app:showAsAction="always"
+        android:iconTint="@color/white"
+        />
+
+
+</menu>
