@@ -19,3 +19,5 @@
 * Dish App (Activity lifecycle, saved instance)
 
 ## Navigation Basics (Jetpack, Architecture basics)
+* Fragment Navigation using Nav Host by Jetpack
+
