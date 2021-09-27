@@ -15,8 +15,8 @@
 * Dice Java (Dice in java)
 * Tip counter with minimal UI
 * RecyclerView (Affirmations app)
-* Words, Words Details (Words apps: RecyclerView, Adapters and Layout manager)
 * Dish App (Activity lifecycle, saved instance)
+* Fragment Holder (Holding Words Fragments)
 
 ## Navigation Basics (Jetpack, Architecture basics)
 * Fragment Navigation using Nav Host by Jetpack
