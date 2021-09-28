@@ -1,14 +1,13 @@
 package com.example.happybirthday.Adapters
 
-import android.content.Intent
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.happybirthday.Fragments.LettersListFragmentsDirections
 import com.example.happybirthday.R
-import com.example.happybirthday.WordsDetailActivity
 
 class WordsAdapter : RecyclerView.Adapter<WordsAdapter.ViewHolder>() {
     val list = ('A').rangeTo('Z').toList()
@@ -27,10 +26,8 @@ class WordsAdapter : RecyclerView.Adapter<WordsAdapter.ViewHolder>() {
         holder.button.text = item.toString()
 
         holder.button.setOnClickListener{
-            val context = holder.itemView.context
-            val intent = Intent(context,WordsDetailActivity::class.java)
-            intent.putExtra("letter", item.toString())
-            context.startActivity(intent)
+            val action = LettersListFragmentsDirections.actionLettersListFragmentsToWordsListFragment(letter = holder.button.text.toString())
+            holder.itemView.findNavController().navigate(action)
         }
     }
 

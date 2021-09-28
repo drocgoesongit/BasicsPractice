@@ -23,9 +23,9 @@ class DataSource {
             ActivityObject("Tip Counter Activity", 1),
             ActivityObject("Dice With Java", 2),
             ActivityObject("Dice With Kotlin", 3),
-            ActivityObject("Words (RecyclerView)", 4),
-            ActivityObject("Dish (Activity Lifecycle)", 5),
-            ActivityObject("Dish (RecyclerView)", 6),
+            ActivityObject("Dish (Activity Lifecycle)", 4),
+            ActivityObject("RecyclerView", 5),
+            ActivityObject("Fragments", 6)
         )
     }
 }

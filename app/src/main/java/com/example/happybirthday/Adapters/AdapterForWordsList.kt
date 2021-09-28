@@ -7,11 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.appcompat.view.WindowCallbackWrapper
 import androidx.recyclerview.widget.RecyclerView
+import com.example.happybirthday.Fragments.WordsListFragment
 import com.example.happybirthday.R
-import com.example.happybirthday.WordsDetailActivity
-import java.net.URI
 
 class AdapterForWordsList(private val context: Context, private val letterId: String): RecyclerView.Adapter<AdapterForWordsList.ViewHolder>(){
     private val filteredWords: List<String>
@@ -41,7 +39,7 @@ class AdapterForWordsList(private val context: Context, private val letterId: St
 
         holder.button.setOnClickListener{
             val context = holder.itemView.context
-            val queryUrl: Uri = Uri.parse("${WordsDetailActivity.SEARCH_PREFIX}${item}")
+            val queryUrl: Uri = Uri.parse("${WordsListFragment.SEARCH_PREFIX}${item}")
             val intent = Intent(Intent.ACTION_VIEW, queryUrl)
             context.startActivity(intent)
         }

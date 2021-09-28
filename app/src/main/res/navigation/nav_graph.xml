@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/lettersListFragments">
+
+    <fragment
+        android:id="@+id/lettersListFragments"
+        android:name="com.example.happybirthday.Fragments.LettersListFragments"
+        android:label="fragment_letters_list_fragments"
+        tools:layout="@layout/fragment_letters_list_fragments" >
+        <action
+            android:id="@+id/action_lettersListFragments_to_wordsListFragment"
+            app:destination="@id/wordsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordsListFragment"
+        android:name="com.example.happybirthday.Fragments.WordsListFragment"
+        android:label="fragment_words_list"
+        tools:layout="@layout/fragment_words_list" >
+        <argument
+            android:name="letter"
+            app:argType="string" />
+    </fragment>
+</navigation>

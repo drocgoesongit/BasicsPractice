@@ -30,9 +30,6 @@ class Dish : AppCompatActivity() {
 
         if(savedInstanceState != null){
             amountTotal = savedInstanceState.getInt("REVENUE", 0)
-            var savedValue = savedInstanceState.getInt("REVENUE", 0)
-            Log.d(TAG, "Saved value ${savedValue}")
-
             val formattedNUmber = NumberFormat.getCurrencyInstance().format(amountTotal)
             binding.totalTextView.text = getString(R.string.total_print, formattedNUmber)
         }

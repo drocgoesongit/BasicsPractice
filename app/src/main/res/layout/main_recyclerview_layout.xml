@@ -15,12 +15,12 @@
         android:layout_marginRight="15dp"
         android:paddingBottom="10dp"
         app:cardCornerRadius="16dp"
-        app:cardElevation="15dp"
+        app:cardElevation="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="@color/red"
+        app:strokeColor="@color/red_light"
         app:strokeWidth="2dp">
 
         <LinearLayout

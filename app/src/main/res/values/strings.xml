@@ -33,4 +33,6 @@
     <string name="total_print">Total in %s</string>
     <string name="share_something">share_something</string>
     <string name="back_action">back_action</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

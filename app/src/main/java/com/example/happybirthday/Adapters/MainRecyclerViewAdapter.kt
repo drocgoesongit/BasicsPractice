@@ -40,17 +40,16 @@ class MainRecyclerViewAdapter : RecyclerView.Adapter<MainRecyclerViewAdapter.Vie
             } else if (item.activityNumber == 3) {
                 val intent = Intent(context, DiceClass::class.java)
                 context.startActivity(intent)
-            } else if (item.activityNumber == 4) {
-                val intent = Intent(context, Words::class.java)
-                context.startActivity(intent)
-            } else if (item.activityNumber == 5) {
+            }  else if (item.activityNumber == 4) {
                 val intent = Intent(context, Dish::class.java)
                 context.startActivity(intent)
-            } else if (item.activityNumber == 6) {
+            } else if (item.activityNumber == 5) {
                 val intent = Intent(context, com.example.happybirthday.RecyclerView::class.java)
                 context.startActivity(intent)
+            }else if (item.activityNumber == 6) {
+                val intent = Intent(context, FragmentHolder::class.java)
+                context.startActivity(intent)
             }
-
         }
     }
 
