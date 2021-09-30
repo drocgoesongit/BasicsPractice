@@ -20,4 +20,9 @@
 
 ## Navigation Basics (Jetpack, Architecture basics)
 * Fragment Navigation using Nav Host by Jetpack
+* ViewModels
+
+## Internet, HTTPs, Restful APIs
+
+## 
 
