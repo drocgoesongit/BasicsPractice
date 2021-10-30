@@ -8,6 +8,9 @@
 * RecyclerView
 * Intents (Explicit & Implicit)
 * LifeCycle Of Activity & Saved Instances
+* Fragments Navigations
+* Jetpack Navigation
+
 
 ## Activity Details
 * Main Activity (To navigate to different activities)
